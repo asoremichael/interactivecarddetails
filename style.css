@@ -345,3 +345,133 @@ button:hover {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+/* ========================================
+   MOBILE RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+
+  /* Main page */
+  .container {
+    min-height: 100vh;
+    display: block;
+  }
+
+
+  /* Purple background at the top */
+  .card-section {
+    width: 100%;
+    height: 240px;
+    min-height: 240px;
+    background-image: url("./images/bg-main-mobile.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  /* Make the cards smaller */
+  .card {
+    width: 286px;
+    height: 157px;
+    border-radius: 8px;
+  }
+
+
+  /* Front card */
+  .card-front {
+    top: 125px;
+    left: 20px;
+    padding: 20px;
+    z-index: 2;
+  }
+
+
+  /* Card logo */
+  .card-logo {
+    width: 55px;
+  }
+
+
+  /* Card number */
+  .card-number {
+    margin-top: 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+
+  /* Name and expiry */
+  .card-bottom {
+    margin-top: 15px;
+    letter-spacing: 1px;
+  }
+
+  .card-name,
+  .card-expiry {
+    font-size: 9px;
+  }
+
+
+  /* Back card */
+  .card-back {
+    top: 35px;
+    left: auto;
+    right: 20px;
+  }
+
+
+  /* CVC */
+  .card-cvc {
+    top: 65px;
+    right: 35px;
+    font-size: 10px;
+  }
+
+
+  /* Form area */
+  .form-section {
+    width: 100%;
+    min-height: auto;
+    padding: 100px 25px 40px;
+    display: block;
+  }
+
+
+  /* Form */
+  form {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+
+  /* Input fields */
+  input {
+    height: 45px;
+  }
+
+
+  /* Expiry and CVC row */
+  .form-row {
+    gap: 10px;
+  }
+
+
+  /* Completed state */
+  .completed-state {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+
+  /* Attribution */
+  .attribution {
+    position: static;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+}
