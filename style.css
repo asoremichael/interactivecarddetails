@@ -1,0 +1,347 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.card-section {
+  width: 35%;
+  min-height: 100vh;
+
+  background-image: url("./images/bg-main-desktop.png");
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.form-section {
+  width: 65%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  position: absolute;
+
+  width: 447px;
+  height: 245px;
+
+  border-radius: 10px;
+
+  background-size: cover;
+  background-position: center;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   FRONT CARD
+========================= */
+
+.card-front {
+  top: 20%;
+  left: 35%;
+
+  background-image: url("./images/bg-card-front.png");
+
+  color: white;
+
+  padding: 30px;
+}
+
+
+/* =========================
+   CARD LOGO
+========================= */
+
+.card-logo {
+  width: 84px;
+}
+
+
+/* =========================
+   CARD NUMBER
+========================= */
+
+.card-number {
+  margin-top: 55px;
+
+  font-size: 27px;
+  letter-spacing: 3px;
+}
+
+
+/* =========================
+   CARD BOTTOM
+========================= */
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 30px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card-name,
+.card-expiry {
+  font-size: 14px;
+}
+
+
+/* =========================
+   BACK CARD
+========================= */
+
+.card-back {
+  top: 52%;
+  left: 55%;
+
+  background-image: url("./images/bg-card-back.png");
+}
+
+
+/* =========================
+   CVC
+========================= */
+
+.card-cvc {
+  position: absolute;
+
+  top: 102px;
+  right: 55px;
+
+  color: white;
+
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+  width: 380px;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: hsl(278, 68%, 11%);
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+input {
+  width: 100%;
+  height: 45px;
+
+  padding: 0 15px;
+
+  border: 1px solid hsl(270, 3%, 87%);
+  border-radius: 7px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+
+/* =========================
+   INPUT FOCUS
+========================= */
+
+input:focus {
+  border-color: hsl(278, 94%, 30%);
+}
+
+
+/* =========================
+   EXPIRY + CVC
+========================= */
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.expiry-group {
+  width: 50%;
+}
+
+.cvc-group {
+  width: 50%;
+}
+
+.expiry-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.expiry-inputs input {
+  width: 50%;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  border-radius: 7px;
+
+  background-color: hsl(278, 68%, 11%);
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   BUTTON HOVER
+========================= */
+
+button:hover {
+  background-color: hsl(278, 68%, 20%);
+}
+
+
+/* =========================
+   ERROR MESSAGES
+========================= */
+
+.error {
+  margin-top: 6px;
+
+  color: hsl(0, 100%, 66%);
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   COMPLETED STATE
+========================= */
+
+.completed-state {
+  display: none;
+
+  width: 380px;
+
+  text-align: center;
+}
+
+.completed-state h1 {
+  margin-bottom: 15px;
+}
+
+.completed-state p {
+  margin-bottom: 30px;
+
+  color: hsl(279, 6%, 55%);
+}
+
+
+/* =========================
+   ATTRIBUTION
+========================= */
+
+.attribution {
+  position: fixed;
+
+  bottom: 10px;
+
+  left: 0;
+  width: 100%;
+
+  font-size: 11px;
+
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
